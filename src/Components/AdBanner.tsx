@@ -3,11 +3,13 @@ import React from 'react';
 import IonIcons from 'react-native-vector-icons/Ionicons';
 import { ImageIcon } from '../Assets/Images';
 
+type Props = {
+  bannerColor : string
+}
 
-
-const AdBanner = () => {
+const AdBanner = ({bannerColor}: Props) => {
   return (
-    <View style={styles.adBannerContainer}>
+    <View style={[styles.adBannerContainer, { backgroundColor: bannerColor }]}>
       <View
         style={{
           flexDirection: 'row',
@@ -39,7 +41,6 @@ const styles = StyleSheet.create({
     width: 350,
     paddingVertical: 30,
     paddingHorizontal: 10,
-    backgroundColor: '#F9B023',
     borderRadius: 10,
     marginVertical: 30,
     marginHorizontal: 31,

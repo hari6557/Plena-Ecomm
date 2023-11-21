@@ -34,9 +34,9 @@ const Home = () => {
       <ScrollView style={{height: '65%'}}>
         <View style={{flexDirection: 'column', alignItems: 'center'}}>
           <ScrollView style={{height, width}} horizontal showsHorizontalScrollIndicator={false}>
-            <AdBanner />
-            <AdBanner />
-            <AdBanner />
+            <AdBanner bannerColor='#F9B023' />
+            <AdBanner bannerColor='grey' />
+            <AdBanner bannerColor='green' />
           </ScrollView>
           <View style={{alignSelf: 'flex-start', paddingLeft: 25}}>
             <Text style={{fontSize: 25, color: '#000', fontWeight: '400'}}>Recommended</Text>

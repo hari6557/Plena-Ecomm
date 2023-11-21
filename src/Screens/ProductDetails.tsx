@@ -34,7 +34,7 @@ const ProductDetails = () => {
 
   const totalWidth = Dimensions.get('window').width;
 
-  const height = totalWidth * 0.5;
+  const height = totalWidth * 0.8;
 
   useEffect(() => {
     let id = route?.params?.id && route?.params?.id;

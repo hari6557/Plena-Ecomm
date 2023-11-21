@@ -43,13 +43,13 @@ const CartBox: React.FC<{product: CartItem}> = ({product}) => {
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <View style={styles.iconSection}>
             <TouchableOpacity onPress={() => handleRemoveItem(product?.id)} style={styles.icon}>
-              <Feather name="minus" size={15} />
+              <Feather name="minus" color={'#000'} size={15} />
             </TouchableOpacity>
           </View>
-          <Text>{product?.quantity}</Text>
+          <Text style={{color: '#000'}}>{product?.quantity}</Text>
           <View style={styles.iconSection}>
             <TouchableOpacity onPress={()=>dispatch(addItemToCart(product))} style={styles.icon}>
-              <Feather name="plus" size={15} />
+              <Feather name="plus" color={'#000'} size={15} />
             </TouchableOpacity>
           </View>
         </View>
